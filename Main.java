@@ -134,7 +134,7 @@ class BinarySearchTree {
         }
 
         public static boolean isValidYear(String newYear){ // check null and "" .isNumeric check
-            if(newYear.equals("1860") || newYear.equals("1870") || newYear.equals("1880") || newYear.equals("1890") || newYear.equals("1900") || // reg ex learn
+            if(newYear.equals("1860") || newYear.equals("1870") || newYear.equals("1880") || newYear.equals("1890") || newYear.equals("1900") || // reg ex learn TODOs
                     newYear.equals("1910") || newYear.equals("1920") || newYear.equals("1930") || newYear.equals("1940") || newYear.equals("1940") ||
                     newYear.equals("1950") || newYear.equals("1960") || newYear.equals("1970") || newYear.equals("1980") || newYear.equals("1990") ||
                     newYear.equals("2000") || newYear.equals("2011") || newYear.equals("2012") || newYear.equals("2013") || newYear.equals("2014") ||
@@ -146,8 +146,8 @@ class BinarySearchTree {
             System.out.println(newYear + " is not a valid new year");
             return false;
         }
-
-        static int getYear(int year){ // reg ex /store in map / own file
+        // look at this function geez
+        static int getYear(int year){ // reg ex /store in map / own file TODO
             if(year == 1860){
                 return 0;
             }
@@ -244,7 +244,7 @@ class BinarySearchTree {
             return 0;
         } // naming get year
 
-        public static void main(String[] args) { // comment code
+        public static void main(String[] args) { // comment code TODO
             helpFunction();
             BinarySearchTree tree = new BinarySearchTree();
             List<String> states = new ArrayList<String>();
@@ -257,7 +257,7 @@ class BinarySearchTree {
                 br.readLine();
                 //Reading from the second line
                 while (((line = br.readLine()) != null)) {
-                    String[] columns = line.split(","); // null check
+                    String[] columns = line.split(","); // null check TODO
                     String tempState=columns[0];
                     tempState=tempState.toLowerCase();
                     states.add(tempState);
